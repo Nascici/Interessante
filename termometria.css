@@ -1,19 +1,21 @@
 * {
     box-sizing: border-box;
 }
+
 #ter {
     background-color: rgb(247, 112, 112);
     max-height: 1500px;
 }
-/*termometria*/
+
 #termometria {
-    background: linear-gradient(to top, rgba(255,0,0,0), red);
+    background: linear-gradient(to top, rgba(255, 0, 0, 0), red);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 200px;
 }
+
 .Título {
     text-align: center;
     letter-spacing: 2px;
@@ -24,6 +26,7 @@
     font-size: 50px;
     text-shadow: 4px 4px 5px rgb(66, 2, 2);
 }
+
 .fis-termo {
     margin: 225px;
     margin-top: 250px;
@@ -32,13 +35,14 @@
     font-size: 20px;
     border-bottom: double black;
 }
+
 .Termômetro {
     float: left;
     position: relative;
     top: 0;
     right: 0;
 }
-/*Temperatura*/
+
 .escalas-termométricas {
     margin: 225px;
     margin-top: 0;
@@ -48,10 +52,12 @@
     font-size: 20px;
     border-bottom: double black;
 }
+
 h2 {
     text-align: center;
     text-transform: uppercase;
-    border-top: dashed black; border-bottom: dashed black;
+    border-top: dashed black;
+    border-bottom: dashed black;
     color: yellow;
     font-size: 50px;
     background: brown;
@@ -60,6 +66,7 @@ h2 {
     right: 0;
     box-shadow: 4px 4px 4px rgb(139, 63, 63);
 }
+
 h3 {
     border-bottom: dotted black;
     color: rgb(145, 58, 0);
@@ -67,17 +74,20 @@ h3 {
     font-style: italic;
     font-size: 30px;
 }
+
 .FQ {
     float: right;
 }
+
 h4 {
     text-decoration: underline;
     font-size: 20px;
 }
+
 .tFQ {
     float: left;
 }
-/*Escalas Termométricas*/
+
 .temperatura {
     margin: 225px;
     margin-top: 0;
@@ -87,13 +97,63 @@ h4 {
     font-size: 20px;
     border-bottom: double black;
 }
+
 .esc {
     display: block;
     margin: 0 auto;
 }
+
 span {
     font-size: 15px;
 }
+
 li {
-    list-style:circle;
+    list-style: circle;
+}
+
+@media screen and (max-width: 768px) {
+    .fis-termo,
+    .escalas-termométricas,
+    .temperatura {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    .Termômetro,
+    .FQ,
+    .tFQ {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .Título {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Título {
+        font-size: 28px;
+    }
+
+    h2, h3 {
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 16px;
+    }
 }
