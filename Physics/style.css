@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+#int {
+    background-color: #000050;
+    max-height: 1500px;
+}
+/*introdução*/
+#introdução {
+    background: linear-gradient(to top, rgba(255,0,0,0), aqua);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+}
+.Título {
+    text-align: center;
+    letter-spacing: 2px;
+    color: yellow;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 50px;
+    text-shadow: 4px 4px 5px rgb(2, 66, 66);
+}
+.int-fis {
+    margin: 225px;
+    margin-top: 225px;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
+    border-bottom: double white;
+}
+.Átomo {
+    float: right;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.container_imagem {
+    position: absolute;
+    left: 20px;
+}
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+.lista-img:checked ~ .lista-menu {
+    display:block;
+}
+.barras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+}
+.lista-menu {
+    background: linear-gradient(45deg, black, rgb(0,0,148));
+    border: inset, rgb(127, 127, 250);
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 65px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu_título {
+    color: gold;
+    font-weight: bold;
+    font-family: "Mulish", sans-serif;
+    text-decoration: underline;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(74, 117, 103);
+    text-transform: uppercase;
+}
+a {
+    transition: all 0.5s linear;
+}
+a:hover {
+    font-size: 22px;
+    color:rgb(56, 136, 255)
+}
