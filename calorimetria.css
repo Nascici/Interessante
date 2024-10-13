@@ -1,19 +1,20 @@
 * {
     box-sizing: border-box;
 }
+
 #cal {
     background-color: rgb(247, 112, 112);
     max-height: 1500px;
 }
-/*calorimetria*/
+
 #calorimetria {
     background: linear-gradient(to top, rgba(255,0,0,0), red);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
+    bottom: 7px;
+    width: 100%;
     height: 200px;
 }
+
 .Título {
     text-align: center;
     letter-spacing: 2px;
@@ -24,21 +25,21 @@
     font-size: 50px;
     text-shadow: 4px 4px 5px rgb(66, 2, 2);
 }
+
 .fis-calor {
     margin: 225px;
-    margin-top: 250px;
+    margin-top: 100px;
     margin-bottom: 25px;
     color: black;
     font-size: 20px;
     border-bottom: double black;
 }
+
 .Sol {
     float: right;
     position: relative;
-    top: 0;
-    right: 0;
 }
-/*Introdução ao calor*/
+
 .int-calor {
     margin: 225px;
     margin-top: 0;
@@ -48,18 +49,19 @@
     font-size: 20px;
     border-bottom: double black;
 }
+
 h2 {
     text-align: center;
     text-transform: uppercase;
-    border-top: dashed black; border-bottom: dashed black;
+    border-top: dashed black;
+    border-bottom: dashed black;
     color: yellow;
     font-size: 50px;
     background: brown;
     position: relative;
-    left: 0;
-    right: 0;
     box-shadow: 4px 4px 4px rgb(139, 63, 63);
 }
+
 h3 {
     border-bottom: dotted black;
     color: rgb(145, 58, 0);
@@ -67,13 +69,15 @@ h3 {
     font-style: italic;
     font-size: 30px;
 }
+
 .placas {
     float: right;
 }
+
 .calor {
     float: left;
 }
-/*Mudança de estado físico*/
+
 .matéria {
     margin: 225px;
     margin-top: 0;
@@ -83,41 +87,43 @@ h3 {
     font-size: 20px;
     border-bottom: double black;
 }
-.estados {
-    display: block;
-    margin: 0 auto;
-}
+
+.estados,
 .mudança {
     display: block;
     margin: 0 auto;
 }
-/*Calor sensível X Calor latente*/
+
 .forno {
     float: left;
 }
-/*Calor sensível*/
+
 .praia {
     float: right;
     border-radius: 35px;
 }
+
 h4 {
     text-decoration: underline;
     font-size: 20px;
 }
+
 .a {
     list-style: none;
 }
+
 .b {
-    list-style:circle;
+    list-style: circle;
 }
-/*Troca de calor em sistema isolado*/
+
 span {
     font-size: 10px;
 }
+
 .eq-ter {
     float: left;
 }
-/*Exercício*/
+
 .exemplo {
     background: rgb(199, 163, 97);
     padding: 17px;
@@ -125,68 +131,114 @@ span {
     border: solid 5px;
     box-shadow: 4px 4px 4px 5px rgb(146, 66, 66);
 }
-/*Condução*/
+
 .condução {
     float: right;
     border-radius: 20px;
 }
+
 .barra-metálica {
     float: left;
 }
+
 .z {
     list-style: none;
     text-align: end;
 }
-/*Convecção*/
+
 .convecção {
     float: left;
     border-radius: 20px;
     margin: 15px;
 }
+
 .geladeira {
     float: right;
 }
-/*Irradiação*/
+
 .irradiação {
     float: left;
 }
+
 .garrafa-térmica {
     float: right;
 }
-/*Dilatação nos sólidos*/
+
 .dl {
     float: right;
     border-radius: 20px;
 }
+
 .ds {
     float: left;
     border-radius: 20px;
     margin: 15px;
 }
+
 .c {
     padding-top: 20px;
 }
+
 .y {
     list-style: none;
     text-align: center;
     margin-left: 40px;
 }
+
 .oríficio {
     float: right;
 }
-/*Dilatação dos líquidos*/
+
 .dilatação-água {
     float: left;
     margin: 15px;
 }
+
 .dilatação-aparente {
     float: right;
 }
+
 .float {
     clear: left;
 }
-/*Diagrama de fases*/
+
 .diagrama {
     float: right;
     border-radius: 15px;
+}
+
+/* Adaptação para diferentes telas */
+@media (max-width: 768px) {
+    .fis-calor,
+    .int-calor,
+    .matéria {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .Título {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .Sol, .placas, .calor, .forno, .praia, .eq-ter, .condução, .barra-metálica, .convecção, .geladeira, .irradiação, .garrafa-térmica, .dl, .ds, .dilatação-água, .dilatação-aparente, .diagrama {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .exemplo {
+        width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+    }
 }
